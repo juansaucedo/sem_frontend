@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { TopnavComponent } from './common/topnav/topnav.component';
+import { MainComponent } from './main/main.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopnavComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule
