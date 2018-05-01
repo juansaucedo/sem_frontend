@@ -11,7 +11,7 @@ const routes: Routes = [
   }
 ];
 
-export const routing = RoutesModule.forRoot(routes);
+export const routing = RouterModule.forRoot(routes);
 
 @NgModule({
   imports: [
