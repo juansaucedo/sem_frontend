@@ -7,6 +7,7 @@ import {routing} from './routes/routes.module';
 import { AppComponent } from './app.component';
 import { TopnavComponent } from './common/topnav/topnav.component';
 import { MainComponent } from './main/main.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { MainComponent } from './main/main.component';
     AppComponent,
     TopnavComponent,
     MainComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
