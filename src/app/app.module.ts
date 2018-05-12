@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { TopnavComponent } from './common/topnav/topnav.component';
 import { MainComponent } from './main/main.component';
 import { LoginComponent } from './login/login.component';
+import { AlertsComponent } from './common/alerts/alerts.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { LoginComponent } from './login/login.component';
     TopnavComponent,
     MainComponent,
     LoginComponent,
+    AlertsComponent,
   ],
   imports: [
     BrowserModule,
