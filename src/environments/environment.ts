@@ -9,6 +9,9 @@ export const environment = {
   modulos: {
     'login': {
       'login': 'login',
+    },
+    'modulos': {
+      'modulos': 'usuario/modulos'
     }
   }
 };

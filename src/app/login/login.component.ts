@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
         .login(this.user)
         .then(response => {
             if (response.status === true) {
+              localStorage.setItem('user', response.variables.key);
               this.alerts.push(new Alerts('Sesión iniciada', response.mensaje, true, 'success'));
               this._router.navigate(['']);
             } else {

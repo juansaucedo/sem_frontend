@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Router} from '@angular/router';
 import {environment} from '../../environments/environment';
-import {HttpClient, HttpResponse, HttpHeaders} from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 
 @Injectable()
 export class LoginService {
@@ -24,9 +24,6 @@ export class LoginService {
   }
 
   private handleSuccess(response: any): Promise<any> {
-    localStorage.setItem('user', response.variables.id);
-    localStorage.setItem('nombre', response.variables.nombre);
-    localStorage.setItem('key', response.variables.key);
     return Promise.resolve(response);
   }
 
